@@ -81,7 +81,7 @@ msgstr ""
 #: ipalib/errors.py:321
 #, python-format
 msgid "unknown error %(code)d from %(server)s: %(error)s"
-msgstr "Code erreur inconnu %(code)d renvoyé par %(server)s: %(error)s"
+msgstr "Code erreur inconnu %(code)d renvoyé par %(server)s : %(error)s"
 
 #: ipalib/errors.py:337
 msgid "an internal error has occurred"
@@ -100,12 +100,12 @@ msgstr "commande inconnue %(name)r"
 #: ipalib/errors.py:392 ipalib/errors.py:417
 #, python-format
 msgid "error on server %(server)r: %(error)s"
-msgstr "erreur sur le serveur %(server)r: %(error)s"
+msgstr "erreur sur le serveur %(server)r : %(error)s"
 
 #: ipalib/errors.py:408
 #, python-format
 msgid "cannot connect to %(uri)r: %(error)s"
-msgstr "impossible de se connecter à %(uri)r: %(error)s"
+msgstr "impossible de se connecter à %(uri)r : %(error)s"
 
 #: ipalib/errors.py:426
 #, python-format
@@ -124,7 +124,7 @@ msgstr "Erreur Kerberos : %(major)s/%(minor)s"
 
 #: ipalib/errors.py:485
 msgid "did not receive Kerberos credentials"
-msgstr "n'ai pas reçu les crédits Kerberos"
+msgstr "identifiants Kerberos absents"
 
 #: ipalib/errors.py:501
 #, python-format
@@ -133,7 +133,7 @@ msgstr "Service %(service)r introuvable dans la base Kerberos"
 
 #: ipalib/errors.py:517
 msgid "No credentials cache found"
-msgstr "Cache de crédits introuvable"
+msgstr "Cache d'identifiants introuvable"
 
 #: ipalib/errors.py:533
 msgid "Ticket expired"
@@ -141,11 +141,11 @@ msgstr "Ticket expiré"
 
 #: ipalib/errors.py:549
 msgid "Credentials cache permissions incorrect"
-msgstr "Permissions du cache de crédit incorrectes"
+msgstr "Permissions du cache d'identifiants incorrectes"
 
 #: ipalib/errors.py:565
 msgid "Bad format in credentials cache"
-msgstr "Mauvais format de cache de crédit"
+msgstr "Mauvais format de cache des identifiants"
 
 #: ipalib/errors.py:581
 msgid "Cannot resolve KDC for requested realm"
@@ -194,11 +194,11 @@ msgstr "Les mots de passe ne correspondent pas"
 
 #: ipalib/errors.py:776
 msgid "Command not implemented"
-msgstr "Commande non développée"
+msgstr "Commande non implémentée"
 
 #: ipalib/errors.py:785
 msgid "Client is not configured. Run ipa-client-install."
-msgstr "Le client n'est pas configuré. Lancer la commande ipa-client-install."
+msgstr "Le client n'est pas configuré. Lancez la commande ipa-client-install."
 
 #: ipalib/errors.py:813 ipalib/errors.py:1053 ipalib/errors.py:1147
 #: ipalib/errors.py:1462 ipalib/errors.py:1479
@@ -212,24 +212,26 @@ msgstr "Cette entrée existe déjà"
 
 #: ipalib/errors.py:845
 msgid "You must enroll a host in order to create a host service"
-msgstr "Vous devez enregistrer un système afin de créer un service"
+msgstr "Vous devez enregistrer un hôte afin de créer un service"
 
 #: ipalib/errors.py:861
 #, python-format
+#: Je pense qu'on peut tout traduire là
 msgid ""
 "Service principal is not of the form: service/fully-qualified host name: "
 "%(reason)s"
 msgstr ""
-"Le principal de service n'est pas de la forme : service/fully-qualified host"
-" name: %(reason)s"
+"Le service principal n'est pas de la forme : service/complètement-décrit hôte"
+" nom : %(reason)s"
 
 #: ipalib/errors.py:877
+#: C'est quoi un principal dans le contexte ?
 msgid "The realm for the principal does not match the realm for this IPA server"
-msgstr "Le domaine du principal ne correspond pas au domaine de ce serveur IPA"
+msgstr "Le domaine principal ne correspond pas au domaine de ce serveur IPA"
 
 #: ipalib/errors.py:893
 msgid "This command requires root access"
-msgstr "Cette commande requiert des droits root"
+msgstr "Cette commande requiert des droits adminitsrateur"
 
 #: ipalib/errors.py:909
 msgid "This is already a posix group"
@@ -297,7 +299,7 @@ msgstr "'%(entry)s' ne possède pas de certificat."
 #: ipalib/errors.py:1179
 #, python-format
 msgid "Unable to create private group. A group '%(group)s' already exists."
-msgstr "Impossible de créer un groupe privé. Un groupe '%(group)s' existe déjà."
+msgstr "Impossible de créer un groupe privé. Un groupe « %(group)s » existe déjà."
 
 #: ipalib/errors.py:1195
 #, python-format
@@ -305,18 +307,18 @@ msgid ""
 "A problem was encountered when verifying that all members were %(verb)s: "
 "%(exc)s"
 msgstr ""
-"Un problème est survenu lors de la vérification que tous les membres étaient"
-" des %(verb)s: %(exc)s"
+"Un problème est survenu lors de la vérification que tous les membres soient"
+" des %(verb)s : %(exc)s"
 
 #: ipalib/errors.py:1213
 #, python-format
 msgid "%(attr)s does not contain '%(value)s'"
-msgstr "%(attr)s ne contient pas '%(value)s'"
+msgstr "%(attr)s ne contient pas « %(value)s »"
 
 #: ipalib/errors.py:1230
 #, python-format
 msgid "The search criteria was not specific enough. Expected 1 and found %(found)d."
-msgstr "Le critère de recherche n'est pas suffisamment spécifique. Une valeur attendue, mais %(found)d trouvées."
+msgstr "Le critère de recherche n'est pas suffisamment spécifique. Une seule valeur attendue, mais %(found)d trouvées."
 
 #: ipalib/errors.py:1254
 #, python-format
@@ -410,7 +412,7 @@ msgstr "Transférer au serveur au lieu d'exécuter localement"
 
 #: ipalib/output.py:92
 msgid "A dictionary representing an LDAP entry"
-msgstr "Un dictionnaire représente une entrée LDAP"
+msgstr "Un dictionnaire représentant une entrée LDAP"
 
 #: ipalib/output.py:100
 msgid "A list of LDAP entries"
@@ -429,8 +431,10 @@ msgid "Only one value is allowed"
 msgstr "Une seule valeur est autorisée"
 
 #: ipalib/parameters.py:1023
+#: Je te propose de traduire par « Vrai » et « Faux », puisque la clé correspondante est traduisible (plus loin).
+#: Il faut donc corriger les autres occurrences.
 msgid "must be True or False"
-msgstr "doit être True ou False"
+msgstr "doit être Vrai ou Faux"
 
 #: ipalib/parameters.py:1124
 msgid "must be an integer"
@@ -463,7 +467,7 @@ msgstr "doit être inférieur ou égal à %(maxvalue)f"
 #: ipalib/parameters.py:1327
 #, python-format
 msgid "must match pattern \"%(pattern)s\""
-msgstr "doit correspondre au motif \"%(pattern)s\""
+msgstr "doit correspondre au motif « %(pattern)s »"
 
 #: ipalib/parameters.py:1345
 msgid "must be binary data"
@@ -490,7 +494,7 @@ msgstr "doit être du texte Unicode"
 
 #: ipalib/parameters.py:1436
 msgid "Leading and trailing spaces are not allowed"
-msgstr ""
+msgstr "Les espaces en début ou fin de chaînes ne sont pas autorisés"
 
 #: ipalib/parameters.py:1444
 #, python-format
@@ -510,7 +514,7 @@ msgstr "doit être d'exactement %(length)d caractères"
 #: ipalib/parameters.py:1482
 #, python-format
 msgid "The character '%(char)r' is not allowed."
-msgstr "Le caractère '%(char)r' n'est pas autorisé."
+msgstr "Le caractère « %(char)r » n'est pas autorisé."
 
 #: ipalib/parameters.py:1526
 #, python-format
@@ -552,7 +556,7 @@ msgstr "Un parmi group, permission ou self est requis"
 #: ipalib/plugins/aci.py:251
 #, python-format
 msgid "Group '%s' does not exist"
-msgstr "Le groupe '%s' n'existe pas"
+msgstr "Le groupe « %s » n'existe pas"
 
 #: ipalib/plugins/aci.py:273
 msgid "empty filter"
@@ -566,7 +570,7 @@ msgstr "Erreur de syntaxe : %(error)s"
 #: ipalib/plugins/aci.py:379
 #, python-format
 msgid "ACI with name \"%s\" not found"
-msgstr "ACI nommée \"%s\" introuvable"
+msgstr "ACI nommée « %s » introuvable"
 
 #: ipalib/plugins/aci.py:400
 msgid "ACI prefix"
@@ -623,8 +627,9 @@ msgstr "Attributs"
 
 #: ipalib/plugins/aci.py:445 ipalib/plugins/delegation.py:123
 #: ipalib/plugins/permission.py:127 ipalib/plugins/selfservice.py:96
+#: Google Translate IS NOT your friend
 msgid "Comma-separated list of attributes"
-msgstr "Liste séparée par des virgules d'attributs"
+msgstr "Liste d'attributs séparée par des virgules"
 
 #: ipalib/plugins/aci.py:451 ipalib/plugins/permission.py:134
 msgid "Type"
@@ -648,15 +653,15 @@ msgstr "Filtre"
 
 #: ipalib/plugins/aci.py:465 ipalib/plugins/permission.py:148
 msgid "Legal LDAP filter (e.g. ou=Engineering)"
-msgstr "Filtre LDAP valide (i.e. ou=Engineering)"
+msgstr "Filtre LDAP valide (ex. ou=Engineering)"
 
 #: ipalib/plugins/aci.py:470 ipalib/plugins/permission.py:153
 msgid "Subtree"
-msgstr "Sous-arbre"
+msgstr "Sous-arborescence"
 
 #: ipalib/plugins/aci.py:471
 msgid "Subtree to apply ACI to"
-msgstr "Sous-arbre sur lequel appliquer l'ACI"
+msgstr "Sous-arborescence sur lequel appliquer l'ACI"
 
 #: ipalib/plugins/aci.py:476 ipalib/plugins/permission.py:159
 msgid "Target group"
@@ -677,7 +682,7 @@ msgstr "Appliquer l'ACI à votre propre entrée (self)"
 #: ipalib/plugins/aci.py:495
 #, python-format
 msgid "Created ACI \"%(value)s\""
-msgstr "ACI créée \"%(value)s\""
+msgstr "ACI créée « %(value)s »"
 
 #: ipalib/plugins/aci.py:500
 msgid "Test the ACI syntax but don't write anything"
@@ -686,7 +691,7 @@ msgstr "Tester la syntaxe de l'ACI, sans rien écrire"
 #: ipalib/plugins/aci.py:551
 #, python-format
 msgid "Deleted ACI \"%(value)s\""
-msgstr "Deleted ACI \"%(value)s\""
+msgstr "Deleted ACI « %(value)s »"
 
 #: ipalib/plugins/aci.py:595 ipalib/plugins/aci.py:843
 #: ipalib/plugins/aci.py:884 ipalib/plugins/delegation.py:250
@@ -697,7 +702,7 @@ msgstr "ACI"
 #: ipalib/plugins/aci.py:601
 #, python-format
 msgid "Modified ACI \"%(value)s\""
-msgstr "ACI modifiée \"%(value)s\""
+msgstr "ACI modifiée « %(value)s »"
 
 #: ipalib/plugins/aci.py:666
 #, python-format
@@ -713,9 +718,10 @@ msgstr "Nouveau nom de l'ACI"
 #: ipalib/plugins/aci.py:895
 #, python-format
 msgid "Renamed ACI to \"%(value)s\""
-msgstr "ACI renommée en \"%(value)s\""
+msgstr "ACI renommée en « %(value)s »"
 
 #: ipalib/plugins/automember.py:28
+#: Et là, il ne faut pas traduire ?
 msgid ""
 "\n"
 "Auto Membership Rule.\n"
@@ -1114,9 +1120,9 @@ msgstr ""
 "Stocke la configuration automount(8) pour autofs(8) dans IPA.\n"
 "\n"
 "La base d'une configuration automount est le fichier de configuration auto.master.\n"
-"C'est aussi le lieu de base dans IPA. Plusieurs configurations auto.master\n"
-"peuvent être stockées dans plusieurs lieux différents. Un lieu est spécifique\n"
-"à chaque mise en œuvre, le lieu par défaut étant 'default'. Par exemple, vous\n"
+"C'est aussi l'emplacement de base dans IPA. Plusieurs configurations auto.master\n"
+"peuvent être stockées dans plusieurs emplacements différents. L'emplacement est spécifique\n"
+"à chaque mise en œuvre, « default » étant la valeur par défaut. Par exemple, vous\n"
 "pouvez avoir un lieu par région géographique, par étage, par type, etc.\n"
 "\n"
 "Automount a trois types d'objets : les lieux, les cartes et les clés.\n"
@@ -1631,12 +1637,12 @@ msgstr "entrée conteneur (%(container)s) introuvable"
 #: ipalib/plugins/baseldap.py:343
 #, python-format
 msgid "%(parent)s: %(oname)s not found"
-msgstr "%(parent)s: %(oname)s introuvable"
+msgstr "%(parent)s : %(oname)s introuvable"
 
 #: ipalib/plugins/baseldap.py:344
 #, python-format
 msgid "%(pkey)s: %(oname)s not found"
-msgstr "%(pkey)s: %(oname)s introuvable"
+msgstr "%(pkey)s : %(oname)s introuvable"
 
 #: ipalib/plugins/baseldap.py:345
 #, python-format
@@ -1900,19 +1906,21 @@ msgstr ""
 "\n"
 
 #: ipalib/plugins/cert.py:112
+#: on peut toujours ajouter « CSR » entre parenthèse
 msgid "Failure decoding Certificate Signing Request:"
-msgstr "Échec dans le décodage du Certificate Signing Request :"
+msgstr "Échec dans le décodage de la requête de signature du certificat :"
 
 #: ipalib/plugins/cert.py:125 ipalib/plugins/cert.py:142
 msgid "Failure decoding Certificate Signing Request"
-msgstr "Échec dans le décodage du Certificate Signing Request"
+msgstr "Échec dans le décodage de la requête de signature du certificat"
 
 #: ipalib/plugins/cert.py:144
 #, python-format
 msgid "Failure decoding Certificate Signing Request: %s"
-msgstr "Échec dans le décodage du Certificate Signing Request : %s"
+msgstr "Échec dans le décodage de la requête de signature du certificat : %s"
 
 #: ipalib/plugins/cert.py:207
+#: ?
 msgid "Submit a certificate signing request."
 msgstr ""
 
@@ -1951,12 +1959,12 @@ msgstr "Émetteur"
 #: ipalib/plugins/cert.py:248 ipalib/plugins/cert.py:448
 #: ipalib/plugins/host.py:184 ipalib/plugins/service.py:103
 msgid "Not Before"
-msgstr "Pas Avant"
+msgstr "Pas avant"
 
 #: ipalib/plugins/cert.py:252 ipalib/plugins/cert.py:451
 #: ipalib/plugins/host.py:187 ipalib/plugins/service.py:106
 msgid "Not After"
-msgstr "Pas Après"
+msgstr "Pas après"
 
 #: ipalib/plugins/cert.py:256 ipalib/plugins/cert.py:454
 #: ipalib/plugins/host.py:190 ipalib/plugins/service.py:109
@@ -4032,7 +4040,7 @@ msgstr ""
 "\n"
 "Systèmes/Machines\n"
 "\n"
-"Un système représente une machine, et peut être utilisé dans plusieurs\n"
+"Un système représente une machine et peut être utilisé dans plusieurs\n"
 "contextes :\n"
 "- entrées de services associés à un système\n"
 "- un système stocke les entrées des principaux de services host/\n"
@@ -4045,7 +4053,7 @@ msgstr ""
 "\n"
 "1. La machine est enregistrée par un administrateur de plein droit.\n"
 "   L'entrée système peut pré-exister ou non. Un administrateur de\n"
-"   plein droit est membre du rôle hostadmin ou du groupe admins\n"
+"   plein droit est membre du rôle hostadmin ou du groupe admins.\n"
 "2. L'inscription est faite par un administrateur limité. Le système\n"
 "   doit avoir été préalablement créé. Un administrateur limité\n"
 "   possède le privilège Host Enrollment.\n"
@@ -4893,8 +4901,8 @@ msgid ""
 "To confirm your intention to revoke this certificate, select a reason from "
 "the pull-down list, and click the \"Revoke\" button."
 msgstr ""
-"Afin de confirmer votre intention de révoquer ce certificat, sélectionner "
-"une raison dans la liste, puis de cliquer sur le bouton \"Révoquer\"."
+"Afin de confirmer votre intention de révoquer ce certificat, sélectionnez "
+"une raison dans la liste, puis de cliquez sur le bouton \"Révoquer\"."
 
 #: ipalib/plugins/internal.py:288
 msgid "Certificate Revoked"
@@ -6210,12 +6218,12 @@ msgstr ""
 "que l'utilisateur sera modifiable.\n"
 "\n"
 "Il existe plusieurs sortes de cibles autorisées dans une permission :\n"
-"1. type: un type d'objet (user, group, etc.).\n"
-"2. memberof: un membre d'un groupe ou d'un groupe de systèmes\n"
-"3. filter: un filtre LDAP\n"
-"4. subtree: un filtre LDAP spécifiant une branche du DIT LDAP. Ceci est un\n"
+"1. type : un type d'objet (user, group, etc.).\n"
+"2. memberof : un membre d'un groupe ou d'un groupe de systèmes\n"
+"3. filter : un filtre LDAP\n"
+"4. subtree : un filtre LDAP spécifiant une branche du DIT LDAP. Ceci est un\n"
 "   sur-ensemble de la cible 'type'.\n"
-"5. targetgroup: accorde l'accès permettant de modifier un groupe spécifique\n"
+"5. targetgroup : accorde l'accès permettant de modifier un groupe spécifique\n"
 "   (comme le fait d'accorder les droits en modification des membres d'un groupe)\n"
 "\n"
 "EXEMPLES :\n"
@@ -7683,7 +7691,7 @@ msgstr ""
 "particulier. À titre d'exemple, les noms d'utilisateurs commençant par\n"
 "un chiffre ou ceux excédant une certaine longueur peuvent poser souci à\n"
 "certains systèmes UNIX.\n"
-"Utiliser la commande 'ipa config-mod' afin de modifier le format de nom\n"
+"Utiliser la commande « ipa config-mod » afin de modifier le format de nom\n"
 "autorisé par les outils IPA.\n"
 "\n"
 "La désactivation d'un compte utilisateur lui interdit d'obtenir de\n"
@@ -8468,17 +8476,17 @@ msgstr "Erreur lors de l'analyse de \"%s\": %s.\n"
 #: ipa-client/ipa-join.c:764
 #, c-format
 msgid "Error obtaining initial credentials: %s.\n"
-msgstr "Impossible d'obtenir les crédits initiaux : %s.\n"
+msgstr "Impossible d'obtenir les identifiants initiaux : %s.\n"
 
 #: ipa-client/ipa-join.c:775
 #, c-format
 msgid "Unable to generate Kerberos Credential Cache\n"
-msgstr "Impossible de créer le cache de crédits Kerberos\n"
+msgstr "Impossible de créer le cache de identifiants Kerberos\n"
 
 #: ipa-client/ipa-join.c:783
 #, c-format
 msgid "Error storing creds in credential cache: %s.\n"
-msgstr "Erreur lors du stockage des crédits dans le cache : %s.\n"
+msgstr "Erreur lors du stockage des identifiants dans le cache : %s.\n"
 
 #: ipa-client/ipa-join.c:833
 #, c-format
@@ -8506,7 +8514,7 @@ msgid ""
 "Unable to join host: Kerberos User Principal not found and host password not"
 " provided.\n"
 msgstr ""
-"Impossible d'inscrire le système : Principal d'utilisateur Kerberos  "
+"Impossible d'inscrire le système : principal d'utilisateur Kerberos  "
 "introuvable et mot de passe non fourni.\n"
 
 #: ipa-client/ipa-join.c:941
@@ -8595,7 +8603,7 @@ msgstr "Impossible d'analyser le nom du principal\n"
 #: ipa-client/ipa-rmkeytab.c:45
 #, c-format
 msgid "krb5_parse_name %d: %s\n"
-msgstr "krb5_parse_name %d: %s\n"
+msgstr "krb5_parse_name %d : %s\n"
 
 #: ipa-client/ipa-rmkeytab.c:55
 #, c-format
@@ -8615,7 +8623,7 @@ msgstr "principal introuvable\n"
 #: ipa-client/ipa-rmkeytab.c:74
 #, c-format
 msgid "krb5_kt_get_entry %d: %s\n"
-msgstr "krb5_kt_get_entry %d: %s\n"
+msgstr "krb5_kt_get_entry %d : %s\n"
 
 #: ipa-client/ipa-rmkeytab.c:82
 #, c-format
@@ -8666,7 +8674,7 @@ msgstr "Nom du royaume"
 #: ipa-client/ipa-rmkeytab.c:230 ipa-client/ipa-rmkeytab.c:237
 #, c-format
 msgid "Failed to open keytab '%s': %s\n"
-msgstr "Échec à l'ouverture du keytab '%s' : %s\n"
+msgstr "Échec à l'ouverture du keytab « %s » : %s\n"
 
 #: ipa-client/ipa-rmkeytab.c:253
 #, c-format
@@ -8676,6 +8684,4 @@ msgstr "La fermeture du keytab a échoué\n"
 #: ipa-client/ipa-rmkeytab.c:255
 #, c-format
 msgid "krb5_kt_close %d: %s\n"
-msgstr "krb5_kt_close %d: %s\n"
-
-
+msgstr "krb5_kt_close %d : %s\n"
